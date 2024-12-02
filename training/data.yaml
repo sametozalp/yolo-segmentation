@@ -1,0 +1,7 @@
+path: /home/samet/Desktop/yolo-seg/train/dataset
+train: /home/samet/Desktop/yolo-seg/train/dataset/train
+val: /home/samet/Desktop/yolo-seg/train/dataset/val
+
+names:
+  0: crosswalk
+nc: 1
