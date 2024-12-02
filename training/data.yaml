@@ -1,6 +1,6 @@
-path: /home/samet/Desktop/yolo-seg/train/dataset
-train: /home/samet/Desktop/yolo-seg/train/dataset/train
-val: /home/samet/Desktop/yolo-seg/train/dataset/val
+path: /home/samet/Desktop/yolo-seg/training/dataset
+train: /home/samet/Desktop/yolo-seg/training/dataset/train
+val: /home/samet/Desktop/yolo-seg/training/dataset/val
 
 names:
   0: crosswalk

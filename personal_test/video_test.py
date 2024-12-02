@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO('/home/samet/Desktop/yolo-seg/training/segmentation_runs/yolo_segmentation/weights/best.pt')  # 'yolov8n.pt', 'yolov8s.pt' gibi seçenekler kullanılabilir
 
 # Video kaynağı (Dosya veya Kamera)
-video_path = '/home/samet/Desktop/yolo-seg/personal_test/videoplayback.mp4'  # Videonun yolunu belirleyin
+video_path = '/home/samet/Desktop/yolo-seg/personal_test/03.mp4'  # Videonun yolunu belirleyin
 cap = cv2.VideoCapture(video_path)
 
 while cap.isOpened():
@@ -16,14 +16,14 @@ while cap.isOpened():
     # YOLOv8 ile tespit yapma
     results = model(frame)
 
-    # Sonuçları görselleştirme
+    # Sonuçları görselleştirme05
     annotated_frame = results[0].plot()  # Tespit edilen nesneleri çizer
 
     # Çıktıyı göster
     cv2.imshow('YOLOv8 Detection', annotated_frame)
 
     # Çıkış için 'q' tuşuna basın
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(100) & 0xFF == ord('q'):
         break
 
 cap.release()
